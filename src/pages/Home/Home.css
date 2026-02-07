@@ -1,0 +1,395 @@
+.app-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* border: 4px solid red; */
+}
+
+.title {
+    /* border: 1px solid black; */
+    height: fit-content;
+    margin: 36px 0 4px 0;
+}
+
+.amount-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 36px 0 12px 0;
+    width: 230px;
+    height: 80px;
+    /* font-size: 24px; */
+    border: 1px solid grey;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.currency {
+    color: grey;
+    font-size: 18px;
+    margin-left: 6px;
+    color: #10b981;
+
+    /* border: 1px solid green; */
+
+}
+
+.amount-input {
+    width: 100%;
+    /* height: 60px; */
+    font-size: 60px;
+    text-align: right;
+    padding-right: 8px;
+    border: none;
+    margin-left: 8px;
+    color: #10b981;
+    /* border: 1px solid red; */
+}
+
+.category,
+.payment-method {
+    color: grey;
+    margin: 16px 0 6px 0;
+}
+
+.methods,
+.categories {
+    display: flex;
+    gap: 6px;
+    /* margin-top: 6px; */
+    font-size: 36px;
+}
+
+.cash-box,
+.credit-box,
+.debit-box,
+.pix-box,
+.contactless-box,
+.google-box,
+.apple-box,
+.paypal-box,
+.food-box,
+.transport-box,
+.home-box,
+.health-box,
+.shopping-box,
+.pets-box,
+.education-box,
+.entertainment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cash,
+.credit,
+.debit,
+.pix,
+.contactless,
+.google,
+.apple,
+.paypal,
+.food,
+.transport,
+.home,
+.health,
+.shopping,
+.pets,
+.education,
+.entertainment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /* color: rgb(102, 216, 102); */
+}
+
+.cash-text,
+.credit-text,
+.debit-text,
+.pix-text,
+.contactless-text,
+.google-text,
+.apple-text,
+.paypal-text,
+.food-text,
+.transport-text,
+.home-text,
+.health-text,
+.shopping-text,
+.pets-text,
+.education-text,
+.entertainment-text {
+    color: transparent;
+    font-size: 12px;
+    margin: 2px 0 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.cash-box:hover,
+.credit-box:hover,
+.debit-box:hover,
+.pix-box:hover,
+.contactless-box:hover,
+.google-box:hover,
+.apple-box:hover,
+.paypal-box:hover,
+.food-box:hover,
+.transport-box:hover,
+.home-box:hover,
+.health-box:hover,
+.shopping-box:hover,
+.pets-box:hover,
+.education-box:hover,
+.entertainment-box:hover {
+    .cash {
+        border: 1px solid rgb(102, 216, 102);
+    }
+
+    .credit {
+        border: 1px solid rgb(122, 122, 122);
+    }
+
+    .debit {
+        border: 1px solid rgb(255, 201, 86);
+    }
+
+    .pix {
+        border: 1px solid rgb(92, 209, 209);
+    }
+
+    .contactless {
+        border: 1px solid rgb(255, 112, 112);
+    }
+
+    .google {
+        border: 1px solid #78acff;
+    }
+
+    .apple {
+        border: 1px solid rgb(121, 121, 121);
+    }
+
+    .paypal {
+        border: 1px solid rgb(117, 200, 255);
+    }
+
+    .food {
+        border: 1px solid rgb(255, 189, 114);
+    }
+
+    .transport {
+        border: 1px solid rgb(126, 126, 126);
+    }
+
+    .home {
+        border: 1px solid rgb(255, 201, 86);
+    }
+
+    .health {
+        border: 1px solid rgb(252, 117, 117);
+    }
+
+    .shopping {
+        border: 1px solid rgb(117, 200, 255);
+    }
+
+    .pets {
+        border: 1px solid rgb(121, 86, 56);
+    }
+
+    .education {
+        border: 1px solid rgb(96, 184, 118);
+    }
+
+    .entertainment {
+        border: 1px solid rgb(89, 100, 165);
+    }
+
+    .cash-text {
+        color: rgb(102, 216, 102);
+    }
+
+    .credit-text {
+        color: rgb(122, 122, 122);
+    }
+
+    .debit-text {
+        color: rgb(255, 201, 86);
+    }
+
+    .pix-text {
+        color: rgb(92, 209, 209);
+    }
+
+    .contactless-text {
+        color: rgb(255, 112, 112);
+    }
+
+    .google-text {
+        color: #78acff;
+    }
+
+    .apple-text {
+        color: rgb(121, 121, 121);
+    }
+
+    .paypal-text {
+        color: rgb(117, 200, 255);
+    }
+
+    .food-text {
+        color: rgb(255, 189, 114);
+    }
+
+    .transport-text {
+        color: rgb(126, 126, 126);
+    }
+
+    .home-text {
+        color: rgb(255, 201, 86);
+    }
+
+    .health-text {
+        color: rgb(252, 117, 117);
+    }
+
+    .shopping-text {
+        color: rgb(117, 200, 255);
+    }
+
+    .pets-text {
+        color: rgb(121, 86, 56);
+    }
+
+    .education-text {
+        color: rgb(96, 184, 118);
+    }
+
+    .entertainment-text {
+        color: rgb(89, 100, 165);
+    }
+}
+
+.cash {
+    color: rgb(102, 216, 102);
+}
+
+.credit {
+    color: rgb(122, 122, 122);
+}
+
+.debit {
+    color: rgb(255, 201, 86);
+}
+
+.pix {
+    color: rgb(112, 255, 255);
+}
+
+.contactless {
+    color: rgb(255, 112, 112);
+}
+
+.google {
+    color: #78acff;
+}
+
+.apple {
+    color: rgb(121, 121, 121);
+}
+
+.paypal {
+    color: rgb(117, 200, 255);
+}
+
+.food {
+    color: rgb(255, 189, 114);
+}
+
+.transport {
+    color: rgb(126, 126, 126);
+}
+
+.home {
+    color: rgb(255, 223, 119);
+}
+
+.health {
+    color: rgb(252, 117, 117);
+}
+
+
+.shopping {
+    color: rgb(117, 200, 255);
+}
+
+.pets {
+    color: rgb(121, 86, 56);
+}
+
+.education {
+    color: rgb(96, 184, 118);
+}
+
+.entertainment {
+    color: rgb(89, 100, 165);
+}
+
+.edit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 6px;
+    font-size: 36px;
+    color: grey;
+    cursor: pointer;
+}
+
+
+.notes {
+    width: 225px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    margin-top: 6px;
+}
+
+.log {
+    /* margin-top: 48px; */
+    position: fixed;
+    bottom: 24px;
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    padding: 0;
+}
+
+.log:hover {
+    background-color: white;
+    color: #10b981;
+    border: 1px solid #10b981;
+
+}

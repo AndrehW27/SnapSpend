@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #10b981;
+}
+
+.title-loading {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
