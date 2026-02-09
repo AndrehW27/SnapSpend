@@ -1,4 +1,4 @@
-.container{
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,10 +8,79 @@
     background-color: #10b981;
 }
 
-.title-loading {
+.loading-snap {
     color: white;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: bold;
     margin: 0px;
     padding: 0px;
+}
+
+.loading-cash {
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.loading-dollar {
+    color: #00ffaa;
+    font-size: 26px;
+} */
+
+.container {
+    background-color: #10b981;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    /* Para colocar a barra embaixo do texto */
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-cash {
+    font-family: 'Inter', sans-serif;
+    /* Ou sua fonte de preferência */
+    /* opacity: 0.9; */
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 8px 0;
+    /* margin-bottom: 0 0 20px 0; */
+}
+
+.loading-snap {
+    font-weight: 700;
+}
+
+.loading-dollar {
+    color: #00fa7d;
+    font-size: 28px;
+    /* Um verde bem escuro para o $ se destacar no branco */
+}
+
+/* Animação opcional para a barra de carregamento */
+.loader-bar {
+    width: 125px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-bar::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: loading 3s linear forwards;
+}
+
+@keyframes loading {
+    to {
+        left: 0;
+    }
 }
