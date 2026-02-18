@@ -1,126 +1,129 @@
 .snaps-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 85dvh;
-    width: 70dvw;
-    /* border: 1px solid grey; */
-    margin-top: 60px;
-    overflow: scroll;
-    box-sizing: border-box;
-    color: grey;
-    gap: 12px;
+    padding: 20px 20px 100px 20px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
 }
 
-.snap-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 120px;
-    border: 1px solid #10b981;
-    padding-left: 12px;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-.infos-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding: 12px; */
-    /* border: 1px solid grey; */
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.snap-date {
-    /* border: 1px solid grey; */
-    width: 100%;
-    min-height: 25px;
-    box-sizing: border-box;
-}
-
-.snap-infos {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
-    /* border: 1px solid grey; */
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-}
-
-.snap-amount {
-    font-size: 24px;
-    font-weight: bold;
+.snaps-title {
+    font-weight: 800;
+    margin-bottom: 20px;
     color: #10b981;
-    /* border: 1px solid grey; */
+    font-size: 24px;
 }
 
-.snap-method {
+.snaps-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: rgb(49, 110, 243);
-    /* border: 1px solid grey; */
+    gap: 12px;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+    max-height: 80dvh;
+
 }
 
-.method-name,
-.category-name {
+.snap-card {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #eee;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.snap-card.active {
+    border-color: #10b981;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.card-date {
+    font-size: 11px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-amount {
+    font-weight: 800;
+    color: #10b981;
+    font-size: 18px;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    /* margin-bottom: 10px; */
+}
+
+.info-badge {
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 20px;
     font-size: 10px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: capitalize;
+}
+
+.card-notes {
+    background: #fffcf0;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.card-notes p {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
     margin: 0;
 }
 
-.snap-category {
+.quote-icon {
+    font-size: 10px;
+    color: #eab308;
+}
+
+.card-actions {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: burlywood;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
 }
 
-.snap-notes {
-    /* border: 1px solid grey; */
-    width: 100%;
-    min-height: 25px;
-    box-sizing: border-box;
-}
-
-.icons-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid grey; */
-    border-radius: 6px;
-    box-sizing: border-box;
-    width: 60px;
-    height: 100%;
-}
-
-.edit,
-.delete {
+.edit-btn,
+.delete-btn {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid grey; */
-    width: 100%;
-    height: 60px;
-    box-sizing: border-box;
-    font-size: 24px;
+    gap: 6px;
 }
 
-.edit {
-    color: grey;
+.edit-btn {
+    background: #f1f5f9;
+    color: #475569;
 }
 
-.delete {
-    color: rgb(255, 87, 87);
+.delete-btn {
+    background: #fef2f2;
+    color: #ef4444;
 }
